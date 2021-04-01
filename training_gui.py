@@ -11,27 +11,27 @@ def sample_data(direction):
     current_sample_count = 0
 
     if direction == "forward":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_forward.mp4')
     elif direction == "backward":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_backward.mp4')
 
     elif direction == "up":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_up.mp4')
     elif direction == "down":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_down.mp4')
 
     elif direction == "yaw left":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_turn_left.mp4')
     elif direction == "yaw right":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_turn_right.mp4')
 
     elif direction == "left":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_left.mp4')
     elif direction == "right":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_right.mp4')
 
     elif direction == "empty":
-        cap = cv2.VideoCapture('media/forward.mkv')
+        cap = cv2.VideoCapture('media/drone_forward.mp4')
 
     while(cap.isOpened()):
         ret, frame = cap.read()
