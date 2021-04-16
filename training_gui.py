@@ -31,7 +31,9 @@ def sample_data(direction):
         cap = cv2.VideoCapture('media/drone_right.mp4')
 
     elif direction == "empty":
-        cap = cv2.VideoCapture('media/drone_forward.mp4')
+        cap = cv2.VideoCapture('media/drone_hover.mp4')
+    elif direction == "hover":
+        cap = cv2.VideoCapture('media/drone_hover.mp4')
 
     while(cap.isOpened()):
         ret, frame = cap.read()
