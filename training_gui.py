@@ -11,7 +11,7 @@ com_port = "/dev/ttyUSB0"
 
 current_sample_count = [0,0,0,0,0,0,0,0,0]
 #directions = ["forward","backward","up","down","yaw left", "yaw right", "left", "right", "empty"]
-directions = ["forward", "yaw right", "empty"]
+directions = ["left", "right", "empty"]
 
 def generate_random():
     return random.randint(0,len(directions)-1)
