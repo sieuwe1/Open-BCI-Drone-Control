@@ -1,6 +1,3 @@
-# https://github.com/CrisSherban/BrainPad
-# This is the work of Serban Cristian Tudosie
-
 from brainflow import DataFilter, FilterTypes, AggOperations
 from scipy.signal import butter, lfilter
 from matplotlib import pyplot as plt
